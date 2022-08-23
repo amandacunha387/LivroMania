@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>       
+    <style>
+        .menu{
+            position: relative;
+            left: 45%;    
+            
+    margin: 0;
+    padding: 0;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 15px;
+    background-color: rgb(245, 0, 0);
+	
+    list-style:none;
+    
+    float:left;
+    }
+/*
+    list-style: removeros bullets(pontos) da lista.
+    border: adciona uma borda, aonde voce consegui altera sua cor e ta manho
+    float: coloca um elemento no lado esquerdo ou direito de seu contêiner, permitindo que o 
+    texto e os elementos embutidos o envolvam
+*/
+.menu li{
+    position:relative;
+    float:left;
+   
+            
+}
+/*  
+    position relative: o elemento é posicionado em relação à sua posição normal
+*/
+.menu li a{    color:rgb(247, 243, 243);
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+/*
+    Color: cor
+    text-decoration: adciona decoração no texto, none deixa sem decoracao
+    display: especifica o tipo de caixa de renderização usada por um elemento. block - bloco
+*/
+
+.menu li a:hover{
+    background:rgb(0, 0, 0);
+    color:#fff;
+    text-shadow:0px 0px 5px #fff;
+}
+/*
+    background:   define a posição inicial da imagem de fundo para um elemento
+    text-shadow: adciona sombra ao texto: 
+*/
+.menu li  ul{
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+    }
+    
+    
+    /*
+    absolute: Com ele você pode posicionar qualquer elemento de acordo com o 
+    elemento pai que tenha um position diferente de static.
+    top: propriedade afeta a posição vertical de um elemento posicionado. Esta propriedade 
+    não tem efeito em elementos não posicionados.
+    left:  usada para especificar a posição horizontal de um elemento posicionado
+    */
+
+.menu li:hover ul, .menu li.over ul{
+    background-color: rgba(255, 0, 0, 0.897);
+    display:block;
+}
+
+.menu li ul li{    
+    display:block;
+    width:150px;
+}
+</style>
+    <title> Books </title>
+</head>
+     <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                            <li><a href="#">Categoria</a>
+                                <ul>
+                                    <li><a href="acao.html">Ação</a></li>
+                                    <li><a href="drama.html">Drama</a></li>
+                                    <li><a href="terror.html">Terror</a></li>
+                                </ul>
+                            </li>
+                        <li><a href="info.html">Informação</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <br><br>
+        <h1 style="color: rgb(245, 4, 4); position: relative; left: 43%;"> SEJA BEM VINDO! </h1>
+        <br>  <br>  <br> 
+        <img src="livrom.png" alt="erro ao carregar a imagem" title="Livros" width="850" height="450"style="position: relative; left: 30%;">
+        <br>
+        <h2 style="font-size: 22px;"> O que é o Livro Mania? </h2>
+        <p style="font-size: 20px;"> O site Livro Mania foi criado para recomendar livros de diversos genêros e autores, com a finalidade de agradar todos os gostos.<br>
+        O objetivo do site "Livro Mania", é incentivar as pessoas a adquirir hábito de ler frequente!<br>
+        A seguir, venha conhecer um pouco mais aprofundado sobre a nossa biblioteca online  </p>:
+       
+       
+    </body>
+</html>

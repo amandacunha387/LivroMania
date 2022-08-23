@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>       
+    <style>
+        .menu{
+            position: relative;
+            left: 45%;    
+            
+    margin: 0;
+    padding: 0;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 15px;
+    background-color: rgb(245, 0, 0);
+	
+    list-style:none;
+    
+    float:left;
+    }
+/*
+    list-style: removeros bullets(pontos) da lista.
+    border: adciona uma borda, aonde voce consegui altera sua cor e ta manho
+    float: coloca um elemento no lado esquerdo ou direito de seu contêiner, permitindo que o 
+    texto e os elementos embutidos o envolvam
+*/
+.menu li{
+    position:relative;
+    float:left;
+   
+            
+}
+/*  
+    position relative: o elemento é posicionado em relação à sua posição normal
+*/
+.menu li a{    color:rgb(247, 243, 243);
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+/*
+    Color: cor
+    text-decoration: adciona decoração no texto, none deixa sem decoracao
+    display: especifica o tipo de caixa de renderização usada por um elemento. block - bloco
+*/
+
+.menu li a:hover{
+    background:rgb(0, 0, 0);
+    color:#fff;
+    text-shadow:0px 0px 5px #fff;
+}
+/*
+    background:   define a posição inicial da imagem de fundo para um elemento
+    text-shadow: adciona sombra ao texto: 
+*/
+.menu li  ul{
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+    }
+    
+    
+    /*
+    absolute: Com ele você pode posicionar qualquer elemento de acordo com o 
+    elemento pai que tenha um position diferente de static.
+    top: propriedade afeta a posição vertical de um elemento posicionado. Esta propriedade 
+    não tem efeito em elementos não posicionados.
+    left:  usada para especificar a posição horizontal de um elemento posicionado
+    */
+
+.menu li:hover ul, .menu li.over ul{
+    background-color: rgba(255, 0, 0, 0.897);
+    display:block;
+}
+
+.menu li ul li{    
+    display:block;
+    width:150px;
+}
+</style>
+    <title> Books </title>
+</head>
+     <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                            <li><a href="#">Categoria</a>
+                                <ul>
+                                    <li><a href="acao.html">Ação</a></li>
+                                    <li><a href="drama.html">Drama</a></li>
+                                    <li><a href="terror.html">Terror</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="info.html">Informação</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br> <br> <br> <br> <br> <br> <br> <br>
+
+       <img src = "trono.jpg" width="280" height="480" style="position: absolute"> 
+       <img src = "CORTE.jpg" width="280" height="480" style="position: absolute; left: 45%;"> 
+  
+       <h3 style="position:absolute ; left: 17%;">  A magia há muito abandonou Adarlan. Um perverso<br> rei governa de seu trono
+         de vidro, punindo impiedo-<br>samente as minorias rebeldes, quando uma assassina<br>
+         chega ao castelo.<br>Depois de cometer um erro e ser capturada, ela se tor-<br>na 
+         prisioneira nas minas de sal de Endovier, onde a <br>tortura prevalece e ninguém sobrevive.</h3>
+        <h3 style="position:absolute ; left: 65%;"> Feyre Archeron morreu Sob a Montanha. Nas garras de Amarantha,
+        <br> a jovem humana que ansiava por amor e proteção deixou de existir.
+        <br> Das cinzas de seu velho eu, Feyre Quebredora da Maldição foi Feita 
+        <br> com os poderes de sete Grão-Feéricos... e uma vontade tão férrea 
+        <br> quanto o metal temido por eles.</h3>
+
+       
+    </body>
+    </html>
